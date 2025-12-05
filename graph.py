@@ -26,7 +26,7 @@ class SocialGraph:
                     self.adjacency_list[nid].remove(node_id)
 
     def update_node(self, node_id, new_name, new_aktiflik):
-        # EKLENEN ÖZELLİK: Düğüm Güncelleme
+        # Düğüm Güncelleme
         if node_id in self.nodes:
             node = self.nodes[node_id]
             node.name = new_name
@@ -50,7 +50,7 @@ class SocialGraph:
             self.adjacency_list[id2].append(id1)
 
     def remove_edge(self, id1, id2):
-        # EKLENEN ÖZELLİK: Bağlantı Silme
+        #  Bağlantı Silme
         self.edges = [e for e in self.edges if not (
             (e.source.id == id1 and e.target.id == id2) or 
             (e.source.id == id2 and e.target.id == id1)
