@@ -89,3 +89,34 @@ class Algorithms:
                     f_score[neighbor] = tentative_g + heuristic(neighbor, end_id)
                     heapq.heappush(open_set, (f_score[neighbor], neighbor))
         return [], float('inf')
+
+    @staticmethod
+    def calculate_centrality(graph):
+        degrees = []
+        for nid in graph.nodes:
+            deg = len(graph.adjacency_list.get(nid, []))
+            degrees.append((graph.nodes[nid], deg))
+        return sorted(degrees, key=lambda x: x[1], reverse=True)[:5]
+
+    @staticmethod
+    def welsh_powell(graph):
+        sorted_nodes = sorted(graph.nodes.keys(), key=lambda n: len(graph.adjacency_list[n]), reverse=True)
+        colors = ["#FF5733", "#33FF57", "#3357FF", "#F0FF33", "#FF33F0", "#33FFF6"]
+        node_colors = {}
+        color_idx = 0
+        
+        for node in sorted_nodes:
+            if node in node_colors: continue
+            current_color = colors[color_idx % len(colors)]
+            node_colors[node] = current_color
+            for candidate in sorted_nodes:
+                if candidate in node_colors: continue
+                is_neighbor = False
+                for colored_node in [n for n, c in node_colors.items() if c == current_color]:
+                    if candidate in graph.adjacency_list.get(colored_node, []):
+                        is_neighbor = True
+                        break
+                if not is_neighbor:
+                    node_colors[candidate] = current_color
+            color_idx += 1
+        return node_colors
