@@ -120,3 +120,15 @@ class Algorithms:
                     node_colors[candidate] = current_color
             color_idx += 1
         return node_colors
+
+    @staticmethod
+    def find_connected_components(graph):
+        # EKLENEN ÖZELLİK: Topluluk Analizi
+        visited = set()
+        components = []
+        for node_id in graph.nodes:
+            if node_id not in visited:
+                component = Algorithms.bfs(graph, node_id)
+                components.append(component)
+                for v in component: visited.add(v)
+        return components
