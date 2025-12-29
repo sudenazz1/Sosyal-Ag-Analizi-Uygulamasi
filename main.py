@@ -19,6 +19,12 @@ class ModernButton(tk.Canvas):
 
         self.draw()
 
+    def draw(self):
+        self.delete("all")
+        color = "#3498db" if self.is_hovered else "#2c3e50"
+        self.config(bg=color)
+        self.create_text(100, 20, text=self.text, fill="white", font=("Segoe UI", 10, "bold"))
+
     def on_enter(self, e):
         self.is_hovered = True
         self.draw()
