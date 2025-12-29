@@ -29,32 +29,3 @@ class Algorithms:
                 neighbors = sorted(graph.adjacency_list.get(vertex, []), reverse=True)
                 stack.extend(neighbors)
         return result
-
-    @staticmethod
-    def dijkstra(graph, start_id, end_id):
-        distances = {node: float('inf') for node in graph.nodes}
-        distances[start_id] = 0
-        previous = {node: None for node in graph.nodes}
-        pq = [(0, start_id)]
-        
-        while pq:
-            d, current = heapq.heappop(pq)
-            if current == end_id: break
-            if d > distances[current]: continue
-            
-            for neighbor in graph.adjacency_list.get(current, []):
-                weight = graph.get_edge_weight(current, neighbor)
-                new_dist = d + weight
-                if new_dist < distances[neighbor]:
-                    distances[neighbor] = new_dist
-                    previous[neighbor] = current
-                    heapq.heappush(pq, (new_dist, neighbor))
-        
-        path = []
-        curr = end_id
-        if distances[end_id] == float('inf'): return [], float('inf')
-        while curr is not None:
-            path.insert(0, curr)
-            curr = previous[curr]
-        return path, distances[end_id]
-       
