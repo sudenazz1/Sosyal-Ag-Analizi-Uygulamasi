@@ -1,0 +1,61 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "name": "Ahmet",
+            "aktiflik": 0.8,
+            "etkilesim": 12.0,
+            "baglanti_sayisi": 2
+        },
+        {
+            "id": 2,
+            "name": "Mehmet",
+            "aktiflik": 0.4,
+            "etkilesim": 5.0,
+            "baglanti_sayisi": 2
+        },
+        {
+            "id": 3,
+            "name": "Ayse",
+            "aktiflik": 0.9,
+            "etkilesim": 20.0,
+            "baglanti_sayisi": 3
+        },
+        {
+            "id": 4,
+            "name": "Taylan",
+            "aktiflik": 0.6,
+            "etkilesim": 8.0,
+            "baglanti_sayisi": 1
+        },
+        {
+            "id": 5,
+            "name": "Ali",
+            "aktiflik": 0.2,
+            "etkilesim": 2.0,
+            "baglanti_sayisi": 0
+        }
+    ],
+    "edges": [
+        {
+            "source": 1,
+            "target": 2,
+            "weight": 8.011419257183242
+        },
+        {
+            "source": 1,
+            "target": 3,
+            "weight": 9.062877898120497
+        },
+        {
+            "source": 2,
+            "target": 3,
+            "weight": 16.041608956491324
+        },
+        {
+            "source": 3,
+            "target": 4,
+            "weight": 13.169223475637219
+        }
+    ]
+}
