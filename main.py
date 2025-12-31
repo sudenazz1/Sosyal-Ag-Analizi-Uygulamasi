@@ -638,7 +638,7 @@ düğümleri sürükleyebilirsiniz!
 
                 from graph import Node
                 # BaglantiSayisi başlangıçta 0
-                new_node = Node(nid, name, aktiflik, etkilesim, 0)
+                new_node = Node(nid, name, aktiflik, etkilesim)
                 self.graph.nodes[nid] = new_node
                 self.node_positions[nid] = (random.randint(100, 700), random.randint(100, 500))
 
