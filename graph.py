@@ -1,41 +1,9 @@
 import json
 import csv
-import math
 from node import Node
 from edge import Edge
 
 class SocialGraph:
-    def add_edge(self, id1, id2):
-        if id1 in self.nodes and id2 in self.nodes:
-            n1 = self.nodes[id1]
-            n2 = self.nodes[id2]
-            
-            # Bağlantı sayılarını al
-            baglanti_1 = len(self.adjacency_list.get(id1, []))
-            baglanti_2 = len(self.adjacency_list.get(id2, []))
-            
-            # Edge'e parametre olarak geç
-            new_edge = Edge(n1, n2, baglanti_1, baglanti_2)
-            self.edges.append(new_edge)
-            
-            self.adjacency_list[id1].append(id2)
-            self.adjacency_list[id2].append(id1)
-
-class Edge:
-    def __init__(self, source_node, target_node, source_baglanti=0, target_baglanti=0):
-        self.source = source_node
-        self.target = target_node
-        self.source_baglanti = source_baglanti
-        self.target_baglanti = target_baglanti
-        self.weight = self.calculate_weight()
-    
-    def calculate_weight(self):
-        diff_aktif = self.source.aktiflik - self.target.aktiflik
-        diff_etkilesim = self.source.etkilesim - self.target.etkilesim
-        diff_baglanti = self.source_baglanti - self.target_baglanti
-        
-        inside_sqrt = (diff_aktif**2) + (diff_etkilesim**2) + (diff_baglanti**2)
-        return 1 + math.sqrt(inside_sqrt)
     def __init__(self):
         self.nodes = {} 
         self.edges = [] 
@@ -77,7 +45,13 @@ class Edge:
 
             n1 = self.nodes[id1]
             n2 = self.nodes[id2]
-            new_edge = Edge(n1, n2)
+            
+            # ✅ Bağlantı sayılarını hesapla (edge eklenmeden ÖNCE)
+            baglanti_1 = len(self.adjacency_list.get(id1, []))
+            baglanti_2 = len(self.adjacency_list.get(id2, []))
+            
+            # Edge'i bağlantı sayılarıyla oluştur
+            new_edge = Edge(n1, n2, baglanti_1, baglanti_2)
             self.edges.append(new_edge)
             
             self.adjacency_list[id1].append(id2)
