@@ -34,12 +34,14 @@ classDiagram
         +float etkilesim
         +to_dict()
     }
+
     class Edge {
         +Node source
         +Node target
         +float weight
         +calculate_weight()
     }
+
     class SocialGraph {
         +dict nodes
         +list edges
@@ -48,6 +50,7 @@ classDiagram
         +add_edge()
         +save_to_csv()
     }
+
     class Algorithms {
         +bfs()
         +dfs()
@@ -55,6 +58,7 @@ classDiagram
         +a_star()
         +welsh_powell()
     }
+
     class App {
         +tk.Tk root
         +setup_ui()
@@ -65,6 +69,7 @@ classDiagram
     SocialGraph *-- Edge
     App o-- SocialGraph
     App ..> Algorithms : uses
+
 
 3. Gerçeklenen Algoritmalar ve Analizler
 
