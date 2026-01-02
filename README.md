@@ -1,8 +1,10 @@
-Sosyal Ağ Analizi ve Görselleştirme Aracı
+**Sosyal Ağ Analizi ve Görselleştirme Aracı**
 
-Ders: Yazılım Geliştirme Laboratuvarı I – Proje 2
-Tarih: 2 Ocak 2026
-Geliştiriciler: Sude Naz Lekesiz, Fatma Nilay Süzer
+**Ders:** Yazılım Geliştirme Laboratuvarı I – Proje 2
+
+**Tarih:** 2 Ocak 2026
+
+**Geliştiriciler:** [Sude Naz Lekesiz] , [Fatma Nilay Süzer]
 
 1. Proje Özeti ve Amacı
 
