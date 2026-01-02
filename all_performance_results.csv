@@ -1,0 +1,29 @@
+csv_file,algorithm,avg_duration_ms,min_duration_ms,max_duration_ms,graph_nodes,graph_edges
+test_small_10.csv,BFS,0.0137,0.0091,0.026,10,24
+test_small_10.csv,DFS,0.0291,0.0179,0.0489,10,24
+test_small_10.csv,Dijkstra,0.1233,0.0494,0.2484,10,24
+test_small_10.csv,A*,0.1634,0.1004,0.2511,10,24
+test_small_10.csv,Degree Centrality,0.0209,0.0141,0.0427,10,24
+test_small_10.csv,Welsh-Powell,0.1303,0.0603,0.3252,10,24
+test_small_10.csv,Connected Components,0.0175,0.0119,0.0324,10,24
+test_small_20.csv,BFS,0.04,0.0334,0.0634,20,62
+test_small_20.csv,DFS,0.0971,0.0691,0.1743,20,62
+test_small_20.csv,Dijkstra,1.0283,0.1347,1.4474,20,62
+test_small_20.csv,A*,0.97,0.5629,1.1859,20,62
+test_small_20.csv,Degree Centrality,0.028,0.0231,0.0441,20,62
+test_small_20.csv,Welsh-Powell,0.2054,0.1516,0.2449,20,62
+test_small_20.csv,Connected Components,0.0442,0.0262,0.0715,20,62
+test_medium_50.csv,BFS,0.106,0.0985,0.1256,50,219
+test_medium_50.csv,DFS,0.261,0.2058,0.3743,50,219
+test_medium_50.csv,Dijkstra,4.0272,1.4315,9.2595,50,219
+test_medium_50.csv,A*,5.4788,1.8535,8.5142,50,219
+test_medium_50.csv,Degree Centrality,0.0615,0.0544,0.0799,50,219
+test_medium_50.csv,Welsh-Powell,0.9196,0.6201,1.1299,50,219
+test_medium_50.csv,Connected Components,0.0806,0.0653,0.1009,50,219
+test_medium_100.csv,BFS,0.1685,0.1352,0.2427,100,589
+test_medium_100.csv,DFS,0.507,0.4752,0.5651,100,589
+test_medium_100.csv,Dijkstra,22.4937,4.6587,54.7795,100,589
+test_medium_100.csv,A*,25.5417,15.3244,48.2187,100,589
+test_medium_100.csv,Degree Centrality,0.0966,0.0634,0.1431,100,589
+test_medium_100.csv,Welsh-Powell,2.8572,2.5353,3.1831,100,589
+test_medium_100.csv,Connected Components,0.2576,0.1767,0.4625,100,589
