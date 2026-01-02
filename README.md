@@ -26,6 +26,7 @@ Sınıf Yapısı (Class Diagram)
 
 Proje, OOP prensiplerine uygun olarak modüler bir yapıda tasarlanmıştır. Aşağıdaki diyagram sınıflar arasındaki ilişkileri göstermektedir:
 
+```mermaid
 classDiagram
     class Node {
         +int id
@@ -69,7 +70,7 @@ classDiagram
     SocialGraph *-- Edge
     App o-- SocialGraph
     App ..> Algorithms : uses
-
+```
 
 3. Gerçeklenen Algoritmalar ve Analizler
 
