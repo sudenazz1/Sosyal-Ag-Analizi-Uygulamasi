@@ -136,10 +136,11 @@ Dinamik ağırlıklandırma sayesinde ağ yapısının yalnızca topolojik deği
 Performans testlerinde 100 düğüme kadar olan ağlarda algoritmaların milisaniye seviyesinde sonuç verdiği görülmüştür.
 Tkinter Canvas kullanılarak uygulanan Force-Directed yerleşim, karmaşık ağların görsel olarak daha anlaşılır olmasını sağlamıştır.
 
-6.1. Test Sonuçları
-==========================================
-         test_small_10.csv
-==========================================
+6.1 Test Sonuçları 
+
+======================================================================
+### 📊 PERFORMANS TESTLERİ: test_small_10.csv
+======================================================================
 Graf Boyutu: 10 düğüm, 24 kenar
 Test Sayısı: 5 iterasyon
 
@@ -191,9 +192,9 @@ Test Sayısı: 5 iterasyon
 
 ✅ Graf yüklendi: 20 düğüm, 62 kenar
 
-==========================================
-          test_small_20.csv
-==========================================
+======================================================================
+### 📊 PERFORMANS TESTLERİ: test_small_20.csv
+======================================================================
 Graf Boyutu: 20 düğüm, 62 kenar
 Test Sayısı: 5 iterasyon
 
@@ -245,9 +246,9 @@ Test Sayısı: 5 iterasyon
 
 ✅ Graf yüklendi: 50 düğüm, 219 kenar
 
-===========================================
-           test_medium_50.csv
-===========================================
+======================================================================
+### 📊 PERFORMANS TESTLERİ: test_medium_50.csv
+======================================================================
 Graf Boyutu: 50 düğüm, 219 kenar
 Test Sayısı: 5 iterasyon
 
@@ -299,9 +300,9 @@ Test Sayısı: 5 iterasyon
 
 ✅ Graf yüklendi: 100 düğüm, 589 kenar
 
-===========================================
-          test_medium_100.csv
-===========================================
+======================================================================
+### 📊 PERFORMANS TESTLERİ: test_medium_100.csv
+======================================================================
 Graf Boyutu: 100 düğüm, 589 kenar
 Test Sayısı: 5 iterasyon
 
@@ -351,15 +352,20 @@ Test Sayısı: 5 iterasyon
    num_components: 1
    largest_component: 100
 
+======================================================================
+✅ TÜM SONUÇLAR KAYDEDİLDİ: all_performance_results.csv
+======================================================================
 
-📊 ÖZET TABLO
+### 📊 ÖZET TABLO
 
-Algoritma                 10 Düğüm     20 Düğüm     50 Düğüm     100 Düğüm
--------------------------------------------------------------------------
-BFS                       0.03ms       0.04ms       0.12ms       0.30ms
-A*                        0.17ms       0.89ms       22.69ms      180.93ms
-DFS                       0.04ms       0.37ms       0.18ms       5.19ms
-Connected Components      0.03ms       0.08ms       0.15ms       0.87ms
-Dijkstra                  0.21ms       2.05ms       7.72ms       96.70ms
-Degree Centrality         0.02ms       0.04ms       0.06ms       2.90ms
+| Algoritma              | 10 Düğüm   | 20 Düğüm   | 50 Düğüm    | 100 Düğüm   |
+|------------------------|------------|------------|-------------|-------------|
+| BFS                    | 0.03ms     | 0.04ms     | 0.12ms      | 0.30ms      |
+| A*                     | 0.17ms     | 0.89ms     | 22.69ms     | 180.93ms    |
+| DFS                    | 0.04ms     | 0.37ms     | 0.18ms      | 5.19ms      |
+| Connected Components   | 0.03ms     | 0.08ms     | 0.15ms      | 0.87ms      |
+| Dijkstra               | 0.21ms     | 2.05ms     | 7.72ms      | 96.70ms     |
+| Degree Centrality      | 0.02ms     | 0.04ms     | 0.06ms      | 2.90ms      |
+| Welsh-Powell           | 0.07ms     | 0.29ms     | 5.81ms      | 17.27ms     |
+
 Welsh-Powell              0.07ms       0.29ms       5.81ms       17.27ms
