@@ -138,7 +138,7 @@ Tkinter Canvas kullanılarak uygulanan Force-Directed yerleşim, karmaşık ağl
 
 6.1. Test Sonuçları
 ==========================================
-📊 PERFORMANS TESTLERİ: test_small_10.csv
+         test_small_10.csv
 ==========================================
 Graf Boyutu: 10 düğüm, 24 kenar
 Test Sayısı: 5 iterasyon
@@ -192,7 +192,7 @@ Test Sayısı: 5 iterasyon
 ✅ Graf yüklendi: 20 düğüm, 62 kenar
 
 ==========================================
-📊 PERFORMANS TESTLERİ: test_small_20.csv
+          test_small_20.csv
 ==========================================
 Graf Boyutu: 20 düğüm, 62 kenar
 Test Sayısı: 5 iterasyon
@@ -246,7 +246,7 @@ Test Sayısı: 5 iterasyon
 ✅ Graf yüklendi: 50 düğüm, 219 kenar
 
 ===========================================
-📊 PERFORMANS TESTLERİ: test_medium_50.csv
+           test_medium_50.csv
 ===========================================
 Graf Boyutu: 50 düğüm, 219 kenar
 Test Sayısı: 5 iterasyon
@@ -300,7 +300,7 @@ Test Sayısı: 5 iterasyon
 ✅ Graf yüklendi: 100 düğüm, 589 kenar
 
 ===========================================
-📊 PERFORMANS TESTLERİ: test_medium_100.csv
+          test_medium_100.csv
 ===========================================
 Graf Boyutu: 100 düğüm, 589 kenar
 Test Sayısı: 5 iterasyon
@@ -351,10 +351,6 @@ Test Sayısı: 5 iterasyon
    num_components: 1
    largest_component: 100
 
-
-=======================================================
-✅ TÜM SONUÇLAR KAYDEDİLDİ: all_performance_results.csv
-=======================================================
 
 📊 ÖZET TABLO
 
