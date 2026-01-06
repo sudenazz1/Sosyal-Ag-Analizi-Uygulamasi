@@ -138,6 +138,159 @@ Tkinter Canvas kullanılarak uygulanan Force-Directed yerleşim, karmaşık ağl
 
 6.1 Test Sonuçları 
 
+## PERFORMANS TESTLERİ: test_small_10.csv
+**---**
+**Graf Boyutu:** 10 düğüm, 24 kenar  
+**Test Sayısı:** 5 iterasyon  
+
+### 🔹 BFS
+- **Ortalama:** 0.0258ms
+- **Min:** 0.0181ms | **Max:** 0.0472ms
+- **start_node:** 9
+- **nodes_visited:** 10
+
+### 🔹 DFS
+- **Ortalama:** 0.0423ms
+- **Min:** 0.0305ms | **Max:** 0.0606ms
+- **start_node:** 7
+- **nodes_visited:** 10
+
+### 🔹 Dijkstra
+- **Ortalama:** 0.2076ms
+- **Min:** 0.0513ms | **Max:** 0.6790ms
+- **start_node:** 3 | **end_node:** 10
+- **path_length:** 2
+- **cost:** 24.21
+
+### 🔹 A*
+- **Ortalama:** 0.1658ms
+- **Min:** 0.1082ms | **Max:** 0.2470ms
+- **start_node:** 10 | **end_node:** 2
+- **path_length:** 3
+- **cost:** 35.09
+
+### 🔹 Degree Centrality
+- **Ortalama:** 0.0203ms
+- **Min:** 0.0129ms | **Max:** 0.0436ms
+- **top_nodes:** 5
+- **max_degree:** 7
+
+### 🔹 Welsh-Powell
+- **Ortalama:** 0.0704ms
+- **Min:** 0.0563ms | **Max:** 0.0968ms
+- **nodes_colored:** 10
+- **colors_used:** 4
+
+### 🔹 Connected Components
+- **Ortalama:** 0.0251ms
+- **Min:** 0.0188ms | **Max:** 0.0408ms
+- **num_components:** 1
+- **largest_component:** 10
+
+---
+
+## PERFORMANS TESTLERİ: test_small_20.csv
+**---**
+**Graf Boyutu:** 20 düğüm, 62 kenar  
+**Test Sayısı:** 5 iterasyon  
+
+### 🔹 BFS
+- **Ortalama:** 0.0445ms
+- **Min:** 0.0317ms | **Max:** 0.0615ms
+- **start_node:** 13
+- **nodes_visited:** 20
+
+### 🔹 DFS
+- **Ortalama:** 0.3731ms
+- **Min:** 0.0720ms | **Max:** 1.2028ms
+- **start_node:** 6
+- **nodes_visited:** 20
+
+### 🔹 Dijkstra
+- **Ortalama:** 2.0458ms
+- **Min:** 0.4838ms | **Max:** 7.0205ms
+- **start_node:** 4 | **end_node:** 6
+- **path_length:** 3
+- **cost:** 12.58
+
+### 🔹 A*
+- **Ortalama:** 0.8924ms
+- **Min:** 0.1023ms | **Max:** 2.9793ms
+- **start_node:** 18 | **end_node:** 19
+- **path_length:** 2
+- **cost:** 12.05
+
+### 🔹 Degree Centrality
+- **Ortalama:** 0.0352ms
+- **Min:** 0.0236ms | **Max:** 0.0713ms
+- **top_nodes:** 5
+- **max_degree:** 9
+
+### 🔹 Welsh-Powell
+- **Ortalama:** 0.2887ms
+- **Min:** 0.2353ms | **Max:** 0.3550ms
+- **nodes_colored:** 20
+- **colors_used:** 5
+
+### 🔹 Connected Components
+- **Ortalama:** 0.0771ms
+- **Min:** 0.0467ms | **Max:** 0.1736ms
+- **num_components:** 1
+- **largest_component:** 20
+
+---
+
+## PERFORMANS TESTLERİ: test_medium_50.csv
+**---**
+**Graf Boyutu:** 50 düğüm, 219 kenar  
+**Test Sayısı:** 5 iterasyon  
+
+### 🔹 BFS
+- **Ortalama:** 0.1237ms
+- **Min:** 0.1092ms | **Max:** 0.1349ms
+- **start_node:** 41
+- **nodes_visited:** 50
+
+### 🔹 DFS
+- **Ortalama:** 0.1807ms
+- **Min:** 0.1674ms | **Max:** 0.2196ms
+- **start_node:** 4
+- **nodes_visited:** 50
+
+### 🔹 Dijkstra
+- **Ortalama:** 7.7244ms
+- **Min:** 1.1148ms | **Max:** 12.8555ms
+- **start_node:** 26 | **end_node:** 23
+- **path_length:** 2
+- **cost:** 45.01
+
+### 🔹 A*
+- **Ortalama:** 22.6927ms
+- **Min:** 5.1467ms | **Max:** 74.5878ms
+- **start_node:** 28 | **end_node:** 35
+- **path_length:** 6
+- **cost:** 48.79
+
+### 🔹 Degree Centrality
+- **Ortalama:** 0.0619ms
+- **Min:** 0.0517ms | **Max:** 0.0973ms
+- **top_nodes:** 5
+- **max_degree:** 14
+
+### 🔹 Welsh-Powell
+- **Ortalama:** 5.8075ms
+- **Min:** 1.1530ms | **Max:** 16.2287ms
+- **nodes_colored:** 50
+- **colors_used:** 6
+
+### 🔹 Connected Components
+- **Ortalama:** 0.1469ms
+- **Min:** 0.1256ms | **Max:** 0.1664ms
+- **num_components:** 1
+- **largest_component:** 50
+
+---
+
 ## PERFORMANS TESTLERİ: test_medium_100.csv
 **---**
 **Graf Boyutu:** 100 düğüm, 589 kenar  
@@ -190,7 +343,6 @@ Tkinter Canvas kullanılarak uygulanan Force-Directed yerleşim, karmaşık ağl
 ---
 
 ✅ **TÜM SONUÇLAR KAYDEDİLDİ:** `all_performance_results.csv`
-### 📊 ÖZET TABLO
 
 | Algoritma              | 10 Düğüm   | 20 Düğüm   | 50 Düğüm    | 100 Düğüm   |
 |------------------------|------------|------------|-------------|-------------|
